@@ -1,0 +1,83 @@
+/* Estilos para la vista de posición tipo kanban */
+.position-header {
+  margin-bottom: 2rem;
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  color: #0d6efd;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}
+
+.step-column {
+  min-height: calc(100vh - 250px);
+  margin-bottom: 1rem;
+}
+
+.step-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.step-title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.candidate-count {
+  background-color: #6c757d;
+  color: white;
+  border-radius: 50px;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.8rem;
+}
+
+.empty-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #6c757d;
+  height: 200px;
+}
+
+.candidate-card {
+  margin-bottom: 12px;
+  cursor: move;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.candidate-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.score-stars {
+  display: flex;
+  color: #28a745;
+  margin-top: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .candidate-columns {
+    flex-direction: column;
+  }
+  
+  .step-column {
+    min-height: auto;
+    margin-bottom: 2rem;
+  }
+} 
